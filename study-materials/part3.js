@@ -11,14 +11,14 @@
 
 // function hitungTotal(harga, jumlah) {
 //     console.log("Input:", { harga, jumlah });
-    
+
 //     const total = harga * jumlah;
 //     console.log("Total:", total);
-    
+
 //     if (total > 1000000) {
 //         console.warn("Transaksi besar terdeteksi");
 //     }
-    
+
 //     return total;
 // }
 
@@ -41,6 +41,37 @@
 //     console.log("Spesifikasi:", produk.spesifikasi.join(", "));
 // }
 
-console.log(0.1 + 0.2);         // 0.30000000000000004
+// console.log(0.1 + 0.2);         // 0.30000000000000004
 // Solusi: gunakan toFixed() atau kalikan dengan 100 saat perhitungan
-console.log((0.1 + 0.2).toFixed(2));  // "0.30"
+// console.log((0.1 + 0.2).toFixed(2));  // "0.30"
+
+let metodePembayaran = "cash";
+
+if (metodePembayaran === "transfer" || metodePembayaran === "kartu kredit" || metodePembayaran === "cash") {
+    console.log("Metode pembayaran diterima");
+};
+
+let namaPengguna = "Admin";
+let displayNama = namaPengguna || "Tamu";
+console.log(displayNama);
+
+let sistemMaintenance = false;
+
+if (!sistemMaintenance) {
+    console.log("Sistem dapat diakses");
+}
+
+let data = null;
+if (!data) {
+    console.log("data tidak tersedia!");
+}
+
+let cuaca = "hujan";
+let waktu = "malam";
+let akhirPekan = false;
+
+if ((cuaca === "cerah" || cuaca === "berawan") && (waktu === "pagi" && akhirPekan)) {
+    console.log("Selamat beraktivitas di luar!");
+} else {
+    console.log("Lanjut turu saja, kanjut juga lagi turu")
+}
