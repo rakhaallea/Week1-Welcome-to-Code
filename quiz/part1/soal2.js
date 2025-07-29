@@ -11,46 +11,50 @@
 //tips gunakan keyword ini di google "conditional switch case javascript"
 //dan mulailah membaca dan mencontek di stackoverflow xixixi
 
-let tanggal = 8; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-let bulan = 8; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-let tahun = 2005; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
+let hari = 21; let bulan = 12; let tahun = new Date().getFullYear();
+let stringBulan = "";
 
-//code switch case kamu disini
 switch (bulan) {
     case 1:
-        console.log(`${tanggal} Januari ${tahun}`);
+        stringBulan = "Januari";
         break;
     case 2:
-        console.log(`${tanggal} Februari ${tahun}`);
+        stringBulan = "Februari";
         break;
     case 3:
-        console.log(`${tanggal} Maret ${tahun}`);
+        stringBulan = "Maret";
         break;
     case 4:
-        console.log(`${tanggal} April ${tahun}`);
+        stringBulan = "April";
         break;
     case 5:
-        console.log(`${tanggal} Mei ${tahun}`);
+        stringBulan = "Mei";
         break;
     case 6:
-        console.log(`${tanggal} Juni ${tahun}`);
+        stringBulan = "Juni";
         break;
     case 7:
-        console.log(`${tanggal} Juli ${tahun}`);
+        stringBulan = "Juli";
         break;
     case 8:
-        console.log(`${tanggal} Agustus ${tahun}`);
+        stringBulan = "Agustus";
         break;
     case 9:
-        console.log(`${tanggal} September ${tahun}`);
+        stringBulan = "September";
         break;
     case 10:
-        console.log(`${tanggal} Oktober ${tahun}`);
+        stringBulan = "Oktober";
         break;
     case 11:
-        console.log(`${tanggal} November ${tahun}`);
+        stringBulan = "November";
         break;
     case 12:
-        console.log(`${tanggal} Desember ${tahun}`);
+        stringBulan = "Desember";
         break;
+    default:
+        hari = null
+        stringBulan = null
+        tahun = null
 }
+
+console.log(`${hari} ${stringBulan} ${tahun}`)

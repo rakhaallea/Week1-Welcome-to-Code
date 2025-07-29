@@ -11,6 +11,7 @@ let firstWordLength = exampleFirstWord4.length;
 
 console.log('First Word: ' + exampleFirstWord4 + ', with length: ' + firstWordLength);
 
+// my code
 let secondWord = word4.substring(4, 14);
 let thirdWord = word4.substring(15, 17);
 let fourthWord = word4.substring(18, 20);

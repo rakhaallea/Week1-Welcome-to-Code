@@ -6,14 +6,14 @@ let word3 = 'wow JavaScript is so cool';
 let exampleFirstWord3 = word3.substring(0, 3);
 
 console.log('First Word: ' + exampleFirstWord3);
+//lanjutkan dengan struktur log diatas
 
-let secondWord3 = word3.substring(4, 14);
-let thirdWord3 = word3.substring(15, 17);
-let fourthWord3 = word3.substring(18, 20);
-let fifthWord3 = word3.substring(21, 25);
+let secondWord = word3.substring(4, 14);
+let thirdWord = word3.substring(15, 17);
+let fourthWord = word3.substring(18, 20);
+let fifthWord = word3.substring(21, 25);
 
-console.log('Second Word: ' + secondWord3);
-console.log('Third Word: ' + thirdWord3);
-console.log('Fourth Word: ' + fourthWord3);
-console.log('Fifth Word: ' + fifthWord3);
-
+console.log('Second Word: ' + secondWord);
+console.log('Third Word: ' + thirdWord);
+console.log('Fourth Word: ' + fourthWord);
+console.log('Fifth Word: ' + fifthWord);

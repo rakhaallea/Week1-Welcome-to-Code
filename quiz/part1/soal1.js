@@ -1,10 +1,10 @@
-// Kamu diminta untuk memprogram suatu game sederhana, Proxytia namanya. 
-// Untuk memulai game itu diperlukan 2 variabel (untuk sekarang), 
-// yaitu nama dan peran. Variabel peran harus memiliki isi data, 
+// Kamu diminta untuk memprogram suatu game sederhana, Proxytia namanya.
+// Untuk memulai game itu diperlukan 2 variabel (untuk sekarang),
+// yaitu nama dan peran. Variabel peran harus memiliki isi data,
 // bila nama kosong, pemain akan diberikan peringatan berupa "nama wajib diisi"
-// bila kosong pemain akan diberikan peringatan berupa "Pilih Peranmu untuk memulai game". 
-// Terdapat 3 peran berbeda yaitu Ksatria, Tabib, dan Penyihir. 
-// Tugas Anda adalah untuk membuat program yang mengecek isi variabel 
+// bila kosong pemain akan diberikan peringatan berupa "Pilih Peranmu untuk memulai game".
+// Terdapat 3 peran berbeda yaitu Ksatria, Tabib, dan Penyihir.
+// Tugas Anda adalah untuk membuat program yang mengecek isi variabel
 // peran serta mengeluarkan respon sesuai isi variabel tersebut.
 //ada 4 jenis respons sesuai dengan 3 jenis peran yaitu
 //halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!
@@ -18,22 +18,23 @@
 // algoritma
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
 
+let nama = "Zenitsu", peran = "Ksatria";
 
-let nama = "Rakha", peran = "Tabib";
+if (nama !== "") {
+    if (peran === " ") {
+        console.log("Pilih peranmu untuk memulai");
+    } else if (peran.toLocaleLowerCase() === "ksatria") {
+        console.log(`halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamu!`);
+    } else if (peran.toLowerCase() === "tabib") {
+        console.log(`halo Tabib ${nama}, kamu akan membantu temanmu yang terluka`);
+    } else if (peran.toLocaleLowerCase() === "penyihir") {
+        console.log(`halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu!`);
+    } else {
+        console.log(`kayaknya kamu ${nama}, jadi NPC aja ya`)
+    }
+} else {
+    console.log(`nama wajib diisi`)
+}
 
 //code disini gunakan console.log untuk outputnya
-if (nama === "") {
-    console.log('nama wajib diisi')
-} else if (peran === "") {
-    console.log('Pilih peranmu untuk memulai game');
-} else {
-    if (peran === "Ksatria") {
-        console.log(`halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamau!`);
-    } else if (peran === "Tabib") {
-        console.log(`halo Tabib ${nama} , kamu akan membantu temanmu yang terluka`);
-    } else if (peran === "Penyihir") {
-        console.log(`halo Penyihir ${nama} , ciptakan keajaiban yang membantu kemenanganmu!`);
-    } else {
-        console.log(`tapi kayaknya kamu jadi bot aja ya, peran yang kamu pilih ga ada`);
-    }
-}
+
