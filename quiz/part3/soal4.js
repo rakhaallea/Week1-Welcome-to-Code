@@ -5,27 +5,4 @@
 // Apabila angka counter adalah kelipatan 3 dengan pertambahan 2, kelipatan 6 dengan pertambahan 5, dan kelipatan 10 dengan pertambahan 9, tuliskan:
 // "3 kelipatan 3"dan seterusnya.
 
-// Loop dengan pertamban 2
-for (let i = 3; i < 100; i += 2) {
-    if (i % 3 === 0) {
-        console.log(`${i} kelipatan 3`);
-    }
-}
-
-// Loop dengan pertamban 5
-console.log('\n')
-
-for (let i = 6; i < 100; i += 5) {
-    if (i % 6 === 0) {
-        console.log(`${i} kelipatan 6`);
-    }
-}
-
-// Loop dengan pertamban 9
-console.log('\n')
-
-for (let i = 10; i <= 100; i += 9) {
-    if (i % 10 === 0) {
-        console.log(`${i} kelipatan 10`);
-    }
-}
+// My Code
