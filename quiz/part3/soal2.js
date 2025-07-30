@@ -5,3 +5,15 @@
 //tampilkan output yang menunjukan kalau looping itu maju pada looping pertama dan mundur pada looping kedua
 
 // My Code
+
+console.log('Maju Mulai');
+for (let i = 0; i < 10; i++) {
+    console.log(`angka ke : ${i}`);
+}
+console.log(`Maju Selesai\n`)
+
+console.log('Mundur Mulai');
+for (let i = 10; i > 0; i--) {
+    console.log(`angka ke : ${i}`);
+}
+console.log(`Mundur Selesai`)

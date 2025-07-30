@@ -17,11 +17,11 @@ while (n <= 10) {
 console.log('MAJU AKHIR\n')
 
 // LOOPING KEDUA
-let K = 10;
+let k = 10;
 
 console.log('MUNDUR')
-while (K > 0) {
-    console.log(K)
-    K--
+while (k > 0) {
+    console.log(k)
+    k--
 }
 console.log('MUNDUR AKHIR')

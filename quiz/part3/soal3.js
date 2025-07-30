@@ -10,3 +10,11 @@
 // Output: 0 adalah angka Genap, 1 adalah angka Ganjil, sampai angka 100 adalah angka Genap
 
 // My Code
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} adalah angka Genap`);
+    }
+    if (i % 2 === 1) {
+        console.log(`${i} adalah angka Ganjil`);
+    }
+}

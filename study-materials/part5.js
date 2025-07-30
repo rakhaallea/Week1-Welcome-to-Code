@@ -61,15 +61,42 @@
 
 // Latihan tambahan (Optional)
 
-for (let i = 1; i <= 100; i++) {
-    let isPrime = i > 1;
-    for (let j = 2; j <= Math.sqrt(i); j++) { // Hanya cek hingga √i
-        if (i % j === 0) {
-            isPrime = false;
-            break;
-        }
-    }
-    if (!isPrime) {
-        console.log(i);
-    }
-}
+// for (let i = 1; i <= 100; i++) {
+//     let isPrime = i > 1;
+//     for (let j = 2; j <= Math.sqrt(i); j++) { // Hanya cek hingga √i
+//         if (i % j === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (!isPrime) {
+//         console.log(i);
+//     }
+// }
+
+// const mobil = { merek: "Toyota", tahun: 2020 };
+// for (const key in mobil) {
+//     console.log(key, ":", mobil[key]); // merek: Toyota, tahun: 2020
+// }
+
+
+// const reverseFunc = (data) => {
+//     let result = "";
+
+//     for (let i = data.length - 1; i >= 0; i--) {
+//         result += data[i];
+//     }
+
+//     return result;
+// }
+
+// console.log(reverseFunc("Hello"));
+
+// const data = "Hello"
+
+// for (let i = data.length - 1; i >= 0; i--) {
+//     console.log(data[i]);
+// }
+
+
+
