@@ -3,9 +3,7 @@
 // yang kemudian akan ditampilkan di console.
 
 //bikin fungsinya disini
-const shoutOut = () => {
-    return "Hallo Function!"
-}
+const shoutOut = () => "Hallo Function";
 
 console.log(shoutOut());
 

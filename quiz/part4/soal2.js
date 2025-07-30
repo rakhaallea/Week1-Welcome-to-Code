@@ -2,12 +2,10 @@
 // dua parameter yang dikirim.
 
 //bikin fungsinya disini
-const calculateMultiply = (num1, num2) => {
-    return num1 * num2;
-}
+const calculateMultiply = (num1, num2) => num1 * num2;
 
-let num1 = 1
-let num2 = 2
+let num1 = 4
+let num2 = 3
 
 let hasilPerkalian = calculateMultiply(num1, num2);
 console.log(hasilPerkalian);

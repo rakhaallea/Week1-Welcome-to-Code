@@ -3,8 +3,10 @@
 // "Nama saya [Name], umur saya [Age] tahun, alamat saya di [Address], dan saya punya hobby yaitu [hobby]!"
 
 //bikin fungsinya disini
-const processSentence = (name, age, address, hobby) => {
-    return `Nama saya ${name}, umur saya ${age}, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`;
+const processSentence = (...biodata) => {
+    const [nama, age, address, hobby] = biodata;
+
+    return `Nama saya ${nama}, umur saya ${age}, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}`;
 }
 
 let name = "Rakha";
