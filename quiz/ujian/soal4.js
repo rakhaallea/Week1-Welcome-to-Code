@@ -3,25 +3,20 @@
 //   Function akan me-return true jika jumlah karakter x sama dengan jumlah karakter o, dan false jika tidak.
 
 function xo(str) {
+    let jumlahX = 0;
+    let jumlahO = 0;
+
     // you can only write your code here!
-    const splitStr = str.split('');
-    let countX = 0;
-    let countY = 0;
-
     for (let i = 0; i < str.length; i++) {
-        if (splitStr[i] === "x") {
-            countX += 1;
+        if (str[i] === "x") {
+            jumlahX += 1;
         }
-        if (splitStr[i] === "o") {
-            countY += 1;
+        if (str[i] === "o") {
+            jumlahO += 1;
         }
     }
 
-    if (countX === countY) {
-        return true;
-    } else {
-        return false;
-    }
+    return (jumlahO === jumlahX) ? true : false;
 }
 
 // TEST CASES

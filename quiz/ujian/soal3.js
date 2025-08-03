@@ -5,13 +5,11 @@
 
 function konversiMenit(menit) {
     // you can only write your code here!
-    const jam = Math.floor(menit / 60);
-    const sisaMenit = menit % 60;
+    const convertToHour = String(Math.floor(menit / 60));
+    const converToMinute = String(menit % 60);
+    const minute = converToMinute.padStart(2, 0);
 
-    const formatMenit = sisaMenit.toString().padStart(2, '0');
-
-    return `${jam}:${formatMenit}`;
-
+    return `${convertToHour}:${minute}`;
 }
 
 // TEST CASES

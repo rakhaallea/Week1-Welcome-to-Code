@@ -5,12 +5,12 @@
 
 function bandingkanAngka(angka1, angka2) {
     //code disini
-    if (angka2 > angka1) {
-        return true;
-    } else if (angka1 > angka2) {
-        return false;
-    } else {
+    if (angka2 === angka1) {
         return -1
+    } else if (angka2 > angka1) {
+        return true
+    } else if (angka2 < angka1) {
+        return false
     }
 }
 

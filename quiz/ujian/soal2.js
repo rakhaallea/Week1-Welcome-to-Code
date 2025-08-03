@@ -3,17 +3,14 @@
 // Function akan me-return kata yang dibalik. Contoh, jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 
 function balikKata(kata) {
+    let result = "";
     // you can only write your code here!
-    const currentString = kata;
-    let newString = '';
-
     for (let i = kata.length - 1; i >= 0; i--) {
-        newString = newString + currentString[i];
+        result += kata[i];
     }
 
-    return newString;
+    return result
 }
-
 // TEST CASES
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
 console.log(balikKata('John Doe')); // eoD nhoJ
